@@ -1,0 +1,10 @@
+# Keybinds for BSPWM
+
+super + return
+	mate-terminal
+
+ctrl + alt + Delete
+	mate-terminal
+
+super + shift + w
+	chromium

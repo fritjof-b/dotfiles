@@ -1,0 +1,6 @@
+sxhkd &
+
+bspc config border_width	2
+bspc config window_gap		12
+
+
