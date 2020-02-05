@@ -1,6 +1,6 @@
 # Keybinds for BSPWM
 
-super + return
+super + Return
 	mate-terminal
 
 ctrl + alt + Delete
@@ -8,3 +8,6 @@ ctrl + alt + Delete
 
 super + shift + w
 	chromium
+
+super + d
+	dmenu_run

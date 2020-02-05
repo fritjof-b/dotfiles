@@ -1,4 +1,8 @@
+#!/bin/bash
+
 sxhkd &
+mate-terminal &
+xterm &
 
 bspc config border_width	2
 bspc config window_gap		12
