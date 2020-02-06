@@ -3,6 +3,9 @@
 super + Return
 	mate-terminal
 
+super + shift + Return
+	xterm
+
 ctrl + alt + Delete
 	mate-terminal
 
