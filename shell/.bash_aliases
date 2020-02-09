@@ -8,6 +8,9 @@ alias cd='cd && ls'
 alias ..='cd ..'
 alias ...='cd ../..'
 
+# mkdir
+alias md='mkdir -p'
+
 # git aliases
 alias gc='git commit -m'
 alias gca='git commit -am'
