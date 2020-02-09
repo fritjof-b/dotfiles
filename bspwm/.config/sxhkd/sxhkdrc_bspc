@@ -1,6 +1,4 @@
 
-
-
 # Close currently focused node
 super + shift + q
 	bspc node -{c,k}
@@ -11,7 +9,7 @@ super + {h,j,k,l}
 
 
 # Dynamic gaps.
-mod3 + shift + bracket{left,right}
+super + shift + bracket{left,right}
 	 bspc config -d focused window_gap "$(($(bspc config -d focused window_gap) {-,+} 5 ))"
 
 
