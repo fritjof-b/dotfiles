@@ -1,4 +1,69 @@
-xft.dpi: 220
+Xft*dpi: 220
+
+
+! Font settings 
+! =============
+Xft*antialias:1
+Xft*rgba: rgb
+Xft*autohint: 0
+Xft*hinting: 1
+Xft*hintstyle: hintslight
+Xft*lcdfilter: lcddefault
+
+! xterm
+! =====
+
+! Basic
+xterm*termName: xterm-256color
+xterm*locale: true
+xterm*utf8: 1
+xterm*utf8Fonts: always
+xterm*dynamicColors: true
+
+! UI
+xterm*toolBar: false
+xterm*scrollBar: false
+xterm*geometry: 80x24
+xterm*internalBorder: 4
+
+! Bell
+xterm*bellIsUrgent: false
+xterm*bellSupressTime: 100
+xterm*marginBell: false
+xterm*visualBell: true
+
+! Highlighting
+xterm*highlightColor: XtDefaultForeground
+xterm*highlightReverse: true
+xterm*highlightSelection: true
+xterm*highlightTextColor: XtDefaultBackground
+
+! Font
+! Font settings
+xterm*faceName: Monospace
+xterm*faceSize: 10.5
+xterm*renderFont: true
+xterm*boldColors: false
+xterm*faceSize1: 9.5
+xterm*faceSize2: 12
+xterm*faceSize3: 15
+xterm*faceSize4: 18.25
+xterm*faceSize5: 20.5
+xterm*faceSize6: 25.5
+xterm*forceBoxChars: false
+xterm*limitFontsets: 5
+xterm*scaleHeight: 1.0
+
+
+! Key bindings.  Use C-S-{c,v} to copy/paste as in GNOME terminal.  The
+! keys "Prior" and "Next" represent PgUp and PgDown respectively.
+xterm*selectToClipboard: true
+xterm*translations: #override \n\
+	Ctrl Shift <KeyPress>C: select-end(SELECT, CLIPBOARD) \n\
+	Ctrl Shift <KeyPress>V: insert-selection(SELECT, CLIPBOARD) \n\
+	Ctrl Shift <KeyPress>Next: smaller-vt-font() \n\
+	Ctrl Shift <KeyPress>Prior: larger-vt-font() \n\
+	Ctrl Shift <KeyPress>Home: set-vt-font(d)
 
 
 ! Theme: Tempus Future

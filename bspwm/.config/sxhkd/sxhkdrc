@@ -1,16 +1,10 @@
 # Keybinds for BSPWM
 
 super + Return
-	mate-terminal
-
-super + shift + Return
 	xterm
 
-ctrl + alt + Delete
-	mate-terminal
-
 super + shift + w
-	chromium
+	firefox-esr
 
 super + d
 	dmenu_run
