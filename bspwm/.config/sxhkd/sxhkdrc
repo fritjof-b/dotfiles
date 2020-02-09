@@ -16,10 +16,25 @@ super + space
 	rofi -show run
 
 # Classic window switcher
-alt + tab
+Alt + tab
 	rofi -show window
 
 
 # quit bspwm normally
 super + alt + Escape
 	bspc quit
+
+
+# Hardware control 
+# ---------------
+
+# Screen locker (requires `slock`, which in Debian is provided by the
+# package `suckless-tools`).
+XF86ScreenSaver
+	slock
+
+# Speaker/output volume.  Requires `amixer` and dedicated keys.
+XF86Audio{Mute,LowerVolume,RaiseVolume}
+	amixer set Master {toggle,5%-,5%+}
+
+
