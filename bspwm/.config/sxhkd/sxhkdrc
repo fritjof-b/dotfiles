@@ -1,13 +1,23 @@
 # Keybinds for BSPWM
 
+
+# Basic commands for running applications and window switching
+
+# Run xterm
 super + Return
 	xterm
 
+# Run firefox
 super + shift + w
 	firefox-esr
 
-super + d
-	dmenu_run
+# Run application
+super + space
+	rofi -show run
+
+# Classic window switcher
+alt + tab
+	rofi -show window
 
 
 # quit bspwm normally
