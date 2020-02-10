@@ -1,7 +1,6 @@
-# Keybinds for BSPWM
-
-
-# Basic commands for running applications and window switching
+###########################################
+# Basic commands for running applications #
+###########################################
 
 # Run xterm
 super + Return
@@ -15,18 +14,29 @@ super + shift + w
 super + space
 	rofi -show run
 
-# Classic window switcher
-Alt + tab
-	rofi -show window
-
 
 # quit bspwm normally
 super + alt + Escape
 	bspc quit
 
+#################################
+# Window & workspace navigation #
+#################################
 
-# Hardware control 
-# ---------------
+# Move focus
+super + {h,j,k,l}
+	bspc node -f {west,south,north,east}
+
+# Move window
+super + shift + {h,j,k,l}
+	bspc node -s {west,south,north,east}
+
+# Change workspace
+
+
+###########################
+# Hardware & misc control #
+###########################
 
 # Screen locker (requires `slock`, which in Debian is provided by the
 # package `suckless-tools`).
@@ -37,4 +47,11 @@ XF86ScreenSaver
 XF86Audio{Mute,LowerVolume,RaiseVolume}
 	amixer set Master {toggle,5%-,5%+}
 
+########
+# Rice #
+########
+
+# Dynamic gaps
+super + shift + bracket{left,right}
+	bspc config -d focused window_gap "$(($(bspc config -d focused window_gap) {-,+} 5 ))"
 
