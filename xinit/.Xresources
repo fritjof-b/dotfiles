@@ -40,7 +40,7 @@ xterm*highlightTextColor: XtDefaultBackground
 
 ! Font
 ! Font settings
-xterm*faceName: Monospace
+xterm*faceName: Hack
 xterm*faceSize: 10.5
 xterm*renderFont: true
 xterm*boldColors: false
