@@ -30,6 +30,9 @@ super + {h,j,k,l}
 # Move window
 super + shift + {h,j,k,l}
 	bspc node -s {west,south,north,east}
+# Kill node
+super + q
+	bspc node -{c,k}
 
 # Change workspace
 
