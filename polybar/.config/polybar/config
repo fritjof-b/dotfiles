@@ -1,23 +1,23 @@
 [bar/top]
-modules-right = date battery
-module-margin = 3
+modules-right = wireless-network date battery
+module-margin = 2
+font-0 = hack:size=14
 
-dim-value = 1.0
-
-bottom = false
-
-dpi-x = 0
-dpi-y = 0
-
-font-0 = hack:size=16
+[global/wm]
+margin-top = 10
 
 
+; ~~~ DATE AND TIME ~~~
 [module/date]
 type = internal/date
-date = %Y-%m-%d
 
+interval = 1.0
+
+date = %Y-%m-%d %H:%M:%S
+date-alt = %A, %d %B %Y
+
+; ~~~ BATTERY ~~~
 [module/battery]
-
 format-discharging = <label-discharging>
 label-discharging = Discharging %percentage%%
 
@@ -33,5 +33,8 @@ battery = BAT0
 adapter = ADP1
 
 poll-interval = 5
-time-format = %H:%M
 
+; ~~~ NETWORK ~~~
+[module/wireless-network]
+type = internal/network
+interface = wlp0s20f3
