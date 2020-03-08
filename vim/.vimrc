@@ -1,6 +1,6 @@
 " Theme
 syntax enable
-colorscheme tempus_future
+" colorscheme tempus_future
 
 " Line numbers
 set nonu

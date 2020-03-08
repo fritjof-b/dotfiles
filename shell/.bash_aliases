@@ -2,8 +2,8 @@
 
 ## System utils
 # ls
-alias ls='ls -A --color=auto'
-alias ll='ls -Al --color=auto'
+alias ls='ls -A --color=auto --group-directories-first'
+alias ll='ls -Al --color=auto --group-directories-first'
 
 # cd
 alias ..='cd ..'
@@ -18,6 +18,10 @@ alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -Iv'
 
+# GUI
+alias open='xdg-open'
+
+## Developer utils
 # git
 alias gc='git commit -m'
 alias gca='git commit -am'
