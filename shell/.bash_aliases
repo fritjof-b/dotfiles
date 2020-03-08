@@ -26,6 +26,12 @@ alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -Iv'
 
+# grep
+alias grep='grep --color=auto'
+
+# xclip
+alias xclip='xclip -selection clipboard'
+
 # GUI
 alias open='xdg-open'
 

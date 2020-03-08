@@ -1,6 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
 
 # If not running interactively, don't do anything
 case $- in
@@ -17,8 +14,6 @@ function cd() {
 	fi
 }
 
-# Enable tab compl. with sudo
-[ "$PS1" ] && complete -cf sudo
 
 # Colourise man pages
 man() {
@@ -37,6 +32,14 @@ man() {
  LESS_TERMCAP_ZW=$(tput rsupm) \
   man "$@"
 }
+
+# Back up a file. Usage "backupthis <filename>"
+backupthis() {
+	cp -riv $1 ${1}-$(date +%Y%m%d%H%M).backup;
+}
+
+# Enable tab compl. with sudo
+[ "$PS1" ] && complete -cf sudo
 
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
