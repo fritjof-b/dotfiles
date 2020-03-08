@@ -1,5 +1,6 @@
 # dotfiles
-A very basic and incomplete setup of dotfiles for Debian and BSPWM using stow.
+Online storage for my dotfiles running Ubuntu 19.10 (prev. Debian 10 Buster).
 
-This is discontinued until further notice; I've started using Prot's Dots for Debian instead. These can be found here[https://protesilaos.com/pdfd/].
+I often look at [https://protesilaos.com/pdfd/] for ideas and help. If you want to run Debian 10 with BSPWM I highly recommend the Prot's Dots for Debian. Very thourogh, extensive and well-documented.
 
+As of my own dotfiles they are a work in progress.
