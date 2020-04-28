@@ -2,16 +2,10 @@
 
 ## System utils
 # ls
-alias ls='ls -A --color=auto --group-directories-first'
-alias ll='ls -Al --color=auto --group-directories-first'
-
-# apt
-alias as='apt search'
-alias ai='sudo apt install'
-alias aug='sudo apt update && sudo apt upgrade'
-alias ali='apt list -i'
-alias ar='sudo apt remove'
-alias arr='sudo apt autoremove'
+alias ls='ls -pv --color=auto --group-directories-first'
+alias lsa='ls -pvA --color=auto --group-directories-first'
+alias lsl='ls -lhpv --color=auto --group-directories-first'
+alias lsls='ls -lhpvA --color=auto --group-directories-first'
 
 # cd
 alias ..='cd ..'
@@ -28,6 +22,8 @@ alias rm='rm -Iv'
 
 # grep
 alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 # xclip
 alias xclip='xclip -selection clipboard'

@@ -91,10 +91,11 @@ hi Debug guifg=#7310cb ctermfg=13
 " -----
 hi LineNr guibg=#f3f1f3 guifg=#5f4d4f term=none ctermbg=7 ctermfg=8
 hi Cursor guibg=#4a484d guifg=#ffffff ctermbg=0 ctermfg=15
-hi CursorLine gui=none guibg=NONE term=none cterm=none ctermbg=none
+hi CursorLine gui=none guibg=#f3f1f3 term=none cterm=none ctermbg=7
 hi CursorColumn gui=none guibg=#f3f1f3 term=none cterm=none ctermbg=7
 hi CursorLineNr gui=bold guibg=#5f4d4f guifg=#ffffff cterm=bold ctermbg=8 ctermfg=15
 hi ColorColumn guibg=#f3f1f3 guifg=#4a484d term=none ctermbg=7 ctermfg=0
+hi SignColumn guibg=#f3f1f3 guifg=#5f4d4f term=none ctermbg=7 ctermfg=8
 
 hi Folded guibg=#f3f1f3 guifg=#5f4d4f ctermbg=7 ctermfg=8
 hi FoldColumn guibg=#f3f1f3 guifg=#5f4d4f ctermbg=7 ctermfg=8
@@ -139,6 +140,30 @@ hi diffRemoved guifg=#a80000 ctermfg=1
 hi diffNewFile gui=none guifg=#1d3fcf ctermfg=4
 hi diffFile gui=none guifg=#714900 cterm=none ctermfg=3
 
+hi GitGutterAdd guibg=#f3f1f3 guifg=#005f26 ctermbg=7 ctermfg=2
+hi GitGutterChange gui=bold guibg=#f3f1f3 guifg=#5f4d4f cterm=bold ctermbg=7 ctermfg=8
+hi GitGutterDelete guibg=#f3f1f3 guifg=#a80000 ctermbg=7 ctermfg=1
+hi GitGutterChangeDelete gui=bold guibg=#f3f1f3 guifg=#a80000 cterm=bold ctermbg=7 ctermfg=1
+
+" Neomake
+" -------
+hi NeomakeError gui=none guibg=#a80000 guifg=#ffffff cterm=none ctermbg=1 ctermfg=15
+hi NeomakeInfo gui=none guibg=#185870 guifg=#ffffff cterm=none ctermbg=6 ctermfg=15
+hi NeomakeWarning gui=none guibg=#714900 guifg=#ffffff cterm=none ctermbg=3 ctermfg=15
+hi NeomakeMessage gui=none guibg=#8b3800 guifg=#ffffff cterm=none ctermbg=11 ctermfg=15
+
+hi NeomakeVirtualtextInfoDefault guifg=#005589 ctermfg=14
+hi NeomakeVirtualtextMessageDefault guifg=#8b3800 ctermfg=11
+hi NeomakeVirtualtextWarningDefault guifg=#714900 ctermfg=3
+hi NeomakeVirtualtextErrorDefault guifg=#a80000 ctermfg=1
+
+hi NeomakeStatusGood gui=none guibg=#005f26 guifg=#ffffff cterm=none ctermbg=2 ctermfg=15
+hi NeomakeStatusGoodNC gui=none guibg=#f3f1f3 guifg=#005f26 cterm=none ctermbg=7 ctermfg=2
+
+hi NeomakeStatColorDefault gui=none guibg=#1d3fcf guifg=#ffffff cterm=none ctermbg=4 ctermfg=15
+hi NeomakeStatColorTypeE gui=none guibg=#a80000 guifg=#ffffff cterm=none ctermbg=1 ctermfg=15
+hi NeomakeStatColorTypeW gui=none guibg=#714900 guifg=#ffffff cterm=none ctermbg=3 ctermfg=15
+
 " Markdown
 " --------
 hi MarkdownRule gui=bold guibg=#f3f1f3 guifg=#4a5700 cterm=bold ctermbg=7 ctermfg=10
@@ -171,3 +196,12 @@ hi MarkdownCodeBlock guifg=#4a484d ctermfg=0
 
 hi MarkdownListMarker gui=none guifg=#005f26 cterm=none ctermfg=2
 hi default link MarkdownOrderedListMarker MarkdownListMarker
+
+" Linting
+" -------
+hi YcmErrorSection gui=undercurl guisp=#a80000 cterm=underline
+hi YcmWarningSection gui=undercurl guisp=#1d3fcf cterm=underline
+hi SyntasticError gui=undercurl guisp=#a80000 cterm=underline
+hi SyntasticWarning gui=undercurl guisp=#1d3fcf cterm=underline
+hi SyntasticErrorSing guifg=#ffffff guibg=#a80000 ctermfg=15 ctermbg=1
+hi SyntasticWarningSign guifg=#ffffff guibg=#1d3fcf ctermfg=15 ctermbg=4
