@@ -29,3 +29,4 @@ fi
 # Load my XTerm and relevant configurations.
 [ -f "$HOME"/.Xresources ] && xrdb -I "$HOME" -merge "$HOME"/.Xresources
 
+export TERMINAL="xterm"
