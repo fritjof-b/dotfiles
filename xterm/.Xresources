@@ -98,24 +98,24 @@ xterm*translations: #override \n\
 	Ctrl Shift <KeyPress>Prior: larger-vt-font() \n\
 	Ctrl Shift <KeyPress>Home: set-vt-font(d)
 
-! Theme: Tempus Totus
-! Description: Light theme for prose or for coding in an open space (WCAG AAA compliant)
+! Theme: Tempus Tempest
+! Description: A green-scale, subtle theme for late night hackers (WCAG AAA compliant)
 ! Author: Protesilaos Stavrou (https://protesilaos.com)
-xterm*background: #ffffff
-xterm*foreground: #4a484d
-xterm*color0: #4a484d
-xterm*color1: #a80000
-xterm*color2: #005f26
-xterm*color3: #714900
-xterm*color4: #1d3fcf
-xterm*color5: #882a7a
-xterm*color6: #185870
-xterm*color7: #f3f1f3
-xterm*color8: #5f4d4f
-xterm*color9: #9b2230
-xterm*color10: #4a5700
-xterm*color11: #8b3800
-xterm*color12: #2d48b0
-xterm*color13: #7310cb
-xterm*color14: #005589
-xterm*color15: #ffffff
+xterm*background: #282b2b
+xterm*foreground: #b6e0ca
+xterm*color0: #282b2b
+xterm*color1: #c6c80a
+xterm*color2: #7ad67a
+xterm*color3: #bfc94a
+xterm*color4: #60d4cd
+xterm*color5: #c0c4aa
+xterm*color6: #8ad0b0
+xterm*color7: #b0c8ca
+xterm*color8: #303434
+xterm*color9: #d1d933
+xterm*color10: #99e299
+xterm*color11: #bbde4f
+xterm*color12: #74e4cd
+xterm*color13: #d2d4aa
+xterm*color14: #9bdfc4
+xterm*color15: #b6e0ca

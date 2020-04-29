@@ -86,4 +86,4 @@ iab medot https://gitlab.com/protesilaos/dotfiles
 syntax enable
 " DO NOT EDIT MANUALLY IF YOU USE MY DOTFILES.  Themes are updated
 " programmatically via my `tempus` script.
-colorscheme tempus_totus
+colorscheme tempus_tempest
