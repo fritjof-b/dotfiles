@@ -1,6 +1,13 @@
 # My aliases for bash
 
 ## System utils
+# apt
+alias aug='sudo apt update && sudo apt upgrade'
+alias ai='sudo apt install'
+alias as='apt search'
+alias arr='sudo apt autoremove'
+alias ar='sudo apt remove'
+
 # ls
 alias ls='ls -pv --color=auto --group-directories-first'
 alias lsa='ls -pvA --color=auto --group-directories-first'

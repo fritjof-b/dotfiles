@@ -1,0 +1,9 @@
+#!/bin/bash
+PROBLEM=$1
+URL="https://open.kattis.com/problems/${PROBLEM}/file/statement/samples.zip"
+
+mkdir -pv "$PROBLEM/sample"
+wget $URL -P "$PROBLEM/sample/"
+unzip "$PROBLEM/sample/samples.zip" -d "$PROBLEM/sample/"
+rm "$PROBLEM/sample/samples.zip"
+echo "#!$(which python3)" > "$PROBLEM/$PROBLEM.py"
