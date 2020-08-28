@@ -9,6 +9,9 @@ plugins=(
 	osx
 	sudo
 	iterm2
+	vscode
+	z
+	colored-man-pages
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -37,4 +40,14 @@ HISTFILESIZE=2000
 
 chpwd() {
 	gls -AF --group-directories-first --color=auto
+}
+
+function acp() {
+	git add .
+	git commit -m "$1"
+	git push
+}
+
+function backupthis() {
+	cp -riv $1 ${1}-$(date +%Y%m%d%H%M).backup;
 }
