@@ -12,6 +12,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.zsh_aliases
 
 
 # General settings
@@ -32,4 +33,8 @@ HISTCONTROL=ignoreboth
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+# Custom functions
 
+chpwd() {
+	gls -AF --group-directories-first --color=auto
+}
