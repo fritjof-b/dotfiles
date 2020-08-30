@@ -21,11 +21,6 @@ alias cp='gcp -iv'
 alias mv='gmv -iv'
 alias rm='grm -Iv'
 
-# grep
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-
 ## Developer utils
 # git
 alias gc='git commit -m'
