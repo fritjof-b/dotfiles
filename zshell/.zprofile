@@ -26,3 +26,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# local/sbin
+if [ -d "/usr/local/sbin" ]; then 
+	PATH="/usr/local/sbin:$PATH"
+fi
