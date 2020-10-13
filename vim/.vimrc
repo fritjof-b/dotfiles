@@ -30,12 +30,12 @@
 " General settings
 " ----------------
 " Read documentation about each option by executing :h <option>
-
+set rnu							  " relative line numbers
 set nocompatible                  " do not preserve compatibility with Vi
 set modifiable                    " buffer contents can be modified
 set encoding=utf-8                " default character encoding
 set autoread                      " detect when a file has been modified externally
-set spelllang=en,el               " languages to check for spelling (english, greek)
+set spelllang=en                  " languages to check for spelling (english, greek)
 set spellsuggest=10               " number of suggestions for correct spelling
 set updatetime=500                " time of idleness is milliseconds before saving swapfile
 set undolevels=1000               " how many undo levels to keep in memory
@@ -67,6 +67,7 @@ set formatoptions-=t formatoptions-=o formatoptions+=crqjnl1
 filetype plugin on                " load syntax options for different file types
 filetype indent off               " do not load indent options for different file types
 
+
 " invisible characters to display (with :set list)
 set listchars=tab:›\ ,nbsp:␣,trail:•,precedes:«,extends:»
 """"set listchars=tab:›\ ,space:·,nbsp:␣,trail:•,eol:¬,precedes:«,extends:»
@@ -87,3 +88,6 @@ syntax enable
 " DO NOT EDIT MANUALLY IF YOU USE MY DOTFILES.  Themes are updated
 " programmatically via my `tempus` script.
 colorscheme tempus_tempest
+
+highlight clear SignColumn
+highlight clear LineNr
