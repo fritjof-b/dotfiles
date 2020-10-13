@@ -51,3 +51,5 @@ function acp() {
 function backupthis() {
 	cp -riv $1 ${1}-$(date +%Y%m%d%H%M).backup;
 }
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

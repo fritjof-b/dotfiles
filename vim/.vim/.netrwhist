@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/fritjof/Documents/lth/3yr/flertraadsprogrammering/concurrent_programming/chat/src/chat'
 let g:netrw_dirhist_3='/Users/fritjof/dotfiles/.git'
 let g:netrw_dirhist_2='/Users/fritjof/git/mytube/timestamps'
 let g:netrw_dirhist_1='/home/fritjof/dotfiles/xterm'
