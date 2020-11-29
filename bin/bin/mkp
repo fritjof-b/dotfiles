@@ -1,10 +1,11 @@
 #!/bin/bash
 PROBLEM=$1
+RATING=$2
 URL="https://open.kattis.com/problems/${PROBLEM}/file/statement/samples.zip"
 
 mkdir -pv "$PROBLEM/sample"
 wget $URL -P "$PROBLEM/sample/"
 unzip "$PROBLEM/sample/samples.zip" -d "$PROBLEM/sample/"
 rm "$PROBLEM/sample/samples.zip"
-echo "#!$(which python3)" > "$PROBLEM/$PROBLEM.py"
+echo "#!$(which python3)\n$PROBLEM, rating: $RATING" > "$PROBLEM/$PROBLEM.py"
 cd "$PROBLEM/"
