@@ -30,3 +30,7 @@ fi
 if [ -d "/usr/local/sbin" ]; then 
 	PATH="/usr/local/sbin:$PATH"
 fi
+
+if [ -d "/opt/homebrew/" ]; then
+	PATH="/opt/homebrew/bin:$PATH"
+fi
