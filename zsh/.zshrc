@@ -2,7 +2,7 @@
 # ~/.zshrc
 #
 
-export ZSH="/Users/fb/.oh-my-zsh"
+export ZSH="/Users/${HOME}/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 plugins=(
