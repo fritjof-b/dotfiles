@@ -3,12 +3,11 @@
 #
 
 export ZSH="${HOME}/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="afowler"
 
 plugins=(
 	macos
 	sudo
-	vscode
 	z
 	colored-man-pages
 )
@@ -25,6 +24,7 @@ source $HOME/.zsh_aliases
 # try to scroll past the end of the file.
 export PAGER="less --quit-at-eof"
 export MANPAGER="$PAGER"
+export LESSHISTFILE=-
 
 
 # Don't put duplicate lines or lines starting with space in the history.
@@ -38,7 +38,7 @@ HISTFILESIZE=2000
 # Custom functions
 
 chpwd() {
-	gls -AF --group-directories-first --color=auto
+	gls -F --group-directories-first --color=auto
 }
 
 function acp() {

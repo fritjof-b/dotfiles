@@ -32,3 +32,9 @@ alias gch='git checkout'
 alias gst='git status'
 alias gbr='git branch'
 
+# python
+alias py='python3.9'
+
+
+# c++
+alias g11='g++ -Wall -Wextra -pedantic-errors -Wold-style-cast -Werror -std=c++11'
