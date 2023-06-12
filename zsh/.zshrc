@@ -10,7 +10,6 @@ export MANPAGER="$PAGER"
 export LESSHISTFILE=-
 
 ZSH_THEME="robbyrussell"
-COMPLETION_WAITING_DOTS="true"
 HISTCONTROL=ignoreboth
 
 zstyle ':omz:update' mode auto      # update automatically without asking
