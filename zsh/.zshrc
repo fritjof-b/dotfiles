@@ -1,50 +1,36 @@
-#
-# ~/.zshrc
-#
+export ZSH="$HOME/.oh-my-zsh"
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
-export ZSH="${HOME}/.oh-my-zsh"
-ZSH_THEME="afowler"
+export ZDOTDIR="$HOME/.zdot"
+export HISTFILE="$ZDOTDIR/.zsh_history"
+export ZSHZ_DATA="$ZDOTDIR/.z"
+
+export PAGER="less --quit-at-eof"
+export MANPAGER="$PAGER"
+export LESSHISTFILE=-
+
+ZSH_THEME="robbyrussell"
+COMPLETION_WAITING_DOTS="true"
+HISTCONTROL=ignoreboth
+
+zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' frequency 13
+
 
 plugins=(
 	macos
 	sudo
 	z
 	colored-man-pages
+	poetry
 )
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_aliases
 
 
-# General settings
-# ================
-
-
-# Default pager.  Note that the option I pass to it will quit once you
-# try to scroll past the end of the file.
-export PAGER="less --quit-at-eof"
-export MANPAGER="$PAGER"
-export LESSHISTFILE=-
-
-
-# Don't put duplicate lines or lines starting with space in the history.
-# See `man bash` for more options.
-HISTCONTROL=ignoreboth
-
-# For setting history length see HISTSIZE and HISTFILESIZE in `man bash`.
-HISTSIZE=1000
-HISTFILESIZE=2000
-
-# Custom functions
-
 chpwd() {
 	gls -F --group-directories-first --color=auto
-}
-
-function acp() {
-	git add .
-	git commit -m "$1"
-	git push
 }
 
 function backupthis() {

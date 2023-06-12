@@ -1,9 +1,9 @@
-# My aliases for bash
+# My aliases for zsh
 
 ## System utils
 
 # ls
-alias ls='gls -pv --color=auto --group-directories-first'
+alias ls='gls -pv --color=auto --group-directories-first --ignore=.CFUserTextEncoding --ignore=.Trash'
 alias lsa='gls -pvA --color=auto --group-directories-first'
 alias lsl='gls -lhpv --color=auto --group-directories-first'
 alias lsls='gls -lhpvA --color=auto --group-directories-first'
