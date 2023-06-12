@@ -2,3 +2,6 @@ metals.*
 .metals
 .vscode
 .DS_Store
+.idea
+
+NO-STOW/brew/Brewfile.lock.json
