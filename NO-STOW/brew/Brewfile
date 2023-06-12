@@ -5,6 +5,7 @@ brew 'pyenv'
 brew 'bat'
 brew 'tree'
 brew 'vim'
+brew 'jq'
 
 cask 'signal'
 cask 'intellij-idea-ce'
