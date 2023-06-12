@@ -49,9 +49,10 @@ done
 mkdir -pv "$HOME"/{tmp,bin,dev}
 mkdir -pv "$HOME"/tmp/screenshots
 
-# macos defaults
-defaults write com.apple.screencapture location "$HOME/tmp/screenshots"
-killall SystemUIServer
+# Screenshots
+defaults write com.apple.screencapture location "$HOME/tmp/screenshots" && killall SystemUIServer
+
+# Dock
 defaults write com.apple.dock orientation left
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0
