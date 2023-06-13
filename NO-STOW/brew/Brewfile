@@ -6,6 +6,7 @@ brew 'bat'
 brew 'tree'
 brew 'vim'
 brew 'jq'
+brew 'task'
 
 cask 'signal'
 cask 'intellij-idea-ce'
