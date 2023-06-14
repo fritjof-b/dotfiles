@@ -3,7 +3,7 @@
 For my own sanity, I'm keeping my dotfiles in this repo.
 I'm using [GNU Stow](https://www.gnu.org/software/stow/) to manage the symlinks.
 
-There are also general steps for setting up a new machine (MacOS).
+There are also general steps for setting up a new machine (macOS).
 
 ## Setup
 
@@ -14,7 +14,7 @@ The setup script will install the following tools:
 - [Homebrew](https://brew.sh/)
 - [Poetry](https://python-poetry.org/)
 - Packages specified in `./NO-STOW/Brewfile`
-- Some MacOS settings (see below)
+- Some macOS settings (see below)
 
 ### Packages
 
