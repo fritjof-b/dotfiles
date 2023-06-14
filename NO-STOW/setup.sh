@@ -37,7 +37,7 @@ else
 fi
 
 echo -n "Installing oh-my-zsh..."
-#sh -c "$(curl -fsSL $OH_MY_ZSH_URL)"
+sh -c "$(curl -fsSL $OH_MY_ZSH_URL)"
 if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
     error_exit ${LINENO} "Failed to install oh-my-zsh"
 fi
@@ -61,7 +61,7 @@ done
 echo -e " ${CHECK_MARK}"
 
 echo -n "Installing poetry..."
-#curl -sSL "${POETRY_URL}" | python3 -
+curl -sSL "${POETRY_URL}" | python3 -
 if ! command -v poetry &> /dev/null; then
     error_exit ${LINENO} "Failed to install poetry"
 fi
