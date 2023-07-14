@@ -1,7 +1,6 @@
 brew 'stow'
 brew 'coreutils'
 brew 'python'
-brew 'pyenv'
 brew 'bat'
 brew 'tree'
 brew 'vim'
