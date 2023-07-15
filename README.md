@@ -21,7 +21,6 @@ The setup script will install the following tools:
 - [stow](https://www.gnu.org/software/stow/)
 - [coreutils](https://www.gnu.org/software/coreutils/)
 - [python](https://www.python.org/)
-- [pyenv](https://github.com/pyenv/pyenv)
 - [bat](https://github.com/sharkdp/bat)
 - [tree](http://mama.indstate.edu/users/ice/tree/)
 - [vim](https://www.vim.org/)
