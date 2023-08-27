@@ -16,6 +16,9 @@ alias ....='cd ../../..'
 # mkdir
 alias md='mkdir -pv'
 
+# connection
+alias chc='ping 8.8.8.8'
+
 # remove, copy and move
 alias cp='gcp -iv'
 alias mv='gmv -iv'
@@ -34,7 +37,6 @@ alias gbr='git branch'
 
 # python
 alias py='python3.9'
-
 
 # c++
 alias g11='g++ -Wall -Wextra -pedantic-errors -Wold-style-cast -Werror -std=c++11'

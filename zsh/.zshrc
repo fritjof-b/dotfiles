@@ -1,3 +1,4 @@
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 

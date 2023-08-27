@@ -20,3 +20,8 @@ if [ -d "/opt/homebrew/" ]; then
 fi
 
 
+# rust
+if [ -d "${HOME}/.cargo" ]; then
+    PATH=$PATH:$HOME/.cargo/bin
+fi
+
